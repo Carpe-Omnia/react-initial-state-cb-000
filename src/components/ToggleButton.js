@@ -7,7 +7,7 @@ class ToggleButton extends React.Component {
     this.state = {  isEnabled: false }
   }
   toggle_state() {
-    if (this.state.isEnabled === false) {
+    if (!this.state.isEnabled) {
       this.setState ({isEnabled: true})
     }
     else {
